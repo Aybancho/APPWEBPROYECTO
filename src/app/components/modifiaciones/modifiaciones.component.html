@@ -1,0 +1,55 @@
+<div class="container">
+  <p>MODIFICAR EQUIPO</p>
+  <div class="row">
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <label class="form-label">Nombre</label>
+                  <input [(ngModel)]="perfil.nombre" type="text" class="form-control" name="nombre">
+              </div>
+              
+              <div class="mb-3">
+                  <label class="form-label">Apellido</label>
+                  <input [(ngModel)]="perfil.apellido" type="text" class="form-control" name="apelido">
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Edad</label>
+                <input [(ngModel)]="perfil.edad" type="text" class="form-control" name="edad">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Descripcion</label>
+              <input [(ngModel)]="perfil.descripcion" type="text" class="form-control" name="descripcion">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Acerca de ti</label>
+            <input [(ngModel)]="perfil.breve_descripcion" type="text" class="form-control" name="breve_descripcion">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Foto (url)</label>
+          <input [(ngModel)]="perfil.imagen" type="text" class="form-control" name="imagen">
+      </div>
+              <button (click)="modificar()" class="btn btn-primary">Guardar</button>
+          </form>
+      </div>
+
+
+      <div class="col-sm-6">
+          <form>
+              <div class="mb-3">
+                  <img src="{{perfil.imagen}}" width="150" height="100" alt="">
+              </div>
+              
+              <div class="mb-3">
+                  <label class="form-label">{{perfil.nombre}}</label>
+              </div>
+              
+          </form>
+      </div>
+
+  </div>
+  
+</div>

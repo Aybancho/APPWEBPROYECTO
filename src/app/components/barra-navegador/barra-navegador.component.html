@@ -1,0 +1,22 @@
+
+ 
+  
+  <p id="barra">
+    <mat-toolbar color="primary">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <!-- Componentes para CRUD -->
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/alta']" routerLinkActive="router-link-active" ><mat-icon>person_add</mat-icon>Agregar</button>
+        <button mat-menu-item [routerLink]="['/consulta']" routerLinkActive="router-link-active" ><mat-icon>group</mat-icon>Consulta</button>
+      </mat-menu>
+      <!-- Estos son los items dentro de Consultas -->
+     
+
+      <span style="margin-left: 20px;" [routerLink]="['/']" routerLinkActive="router-link-active" >Curriculums</span>
+      
+    </mat-toolbar>
+  </p>
+  
+  

@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+    <mat-card-header style="margin-left: 0%;">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title id="titulo" >{{perfil.nombre}} {{perfil.apellido}}</mat-card-title>  
+      
+      <img  id="imagen" src="{{perfil.imagen}}" width="200" height="150" alt="">
+      <mat-card-subtitle>{{perfil.descripcion}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content> 
+      <p id="des">
+        {{perfil.breve_descripcion}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="agregarLikes()"> <mat-icon>thumb_up_alt</mat-icon>Me gusta</button>
+      <button mat-button (click)="agregarDislikes()"> <mat-icon>thumb_down_alt</mat-icon>No me gusta</button>
+    </mat-card-actions> 
+  </mat-card>
+
+

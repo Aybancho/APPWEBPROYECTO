@@ -1,0 +1,41 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    color: black;
+    border: crimson;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: auto;
+    text-align: left;
+
+  }
+  body{
+      text-align: center;
+  }
+ 
+  .example-full-width {
+    width: 100%;
+    align-self: center;
+    color:darkgray;
+    border-radius: 5px;
+    background-color:whitesmoke;
+    margin-left: 5px;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  .text{
+      color: black;
+  }
+
+  .example-button-row button,
+.example-button-row a {
+  margin-left: 630px;
+  border-radius: 3%;
+  border-color: black;
+  color: #2DCD20;
+  background-color: whitesmoke;
+}

@@ -1,0 +1,49 @@
+<!-- <div class="container"> -->
+  <!-- <div class="card"> -->
+    
+  <div class="card-body">
+    <table class="table table-hover">
+      <thead>
+        <tr class="text-center">
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>Descripcion</th>
+          <th>Likes</th>
+          <th>Dislikes</th>
+          <th>Imagen</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let perfil of perfiles" class="text-center">
+          <td>{{perfil.id}}</td>
+          <td>{{perfil.nombre}}</td>
+          <td>{{perfil.apellido}}</td>
+          <td>{{perfil.edad}}</td>
+          <td>{{perfil.descripcion}}</td>
+          <td>{{perfil.likes}}</td>
+          <td>{{perfil.dislikes}}</td>
+          <td><img src="{{perfil.imagen}}" alt="" width="150" height="100"> </td>
+          <td>
+            <button class="color-icon" mat-icon-button (click)="modificar(perfil.id)">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </td>
+          <td>
+            <button  class="color-icon" mat-icon-button  (click)="eliminar(perfil.id)">
+            <mat-icon>delete_sweep</mat-icon>
+          </button>
+          </td>
+          <td>
+            <button  class="color-icon" mat-icon-button (click)="consultita(perfil.id)">
+              <mat-icon >search</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  <!-- </div>
+</div> -->
+
